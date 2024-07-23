@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Work</title>
+        <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="./work.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="cursor_plus fixed z-50 pointer-events-none -translate-x-1/2 -translate-y-1/2 bg-[var(--highlight)] rounded-full flex justify-center items-center">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 11V21H11V11L21 11V10L11 10V0H10V10L0 10V11L10 11Z" fill="white"/>
+        </svg>
+    </div>
+
+    <div class="cursor fixed z-50 pointer-events-none">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle id="outer-circle" cx="24" cy="24" r="24" fill="url(#paint0_radial_1542_41)" />
+            <circle cx="24" cy="24" r="6" fill="#14CF93" />
+            <defs>
+                <radialGradient id="paint0_radial_1542_41" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(24 24) rotate(90) scale(24)">
+                    <stop stop-color="#D9D9D9" stop-opacity="0" />
+                    <stop offset="1" stop-color="#14CF93" stop-opacity="0.6" />
+                </radialGradient>
+            </defs>
+        </svg>
+    </div>
+
+        <main>
+            <section class="nav_links w-full">
+                <nav class="h-[15vh] md:h-[5vw] flex justify-between items-center px-12 underline text-[var(--primary)] font-[mazius] uppercase text-sm font-light">
+                    <a href="/">Nayan Patil</a>
+                    <a class="max-md:hidden" href="">Work</a>
+                    <a class="max-md:hidden" href="/">Social</a>
+
+                    <a href="mailto:nayan101viper@gmail.com">Contact</a>
+                </nav>
+            </section>
+            <section class="project_container w-full md:h-[90vh] text-[var(--primary)] overflow-hidden">
+                    <div class="horizontal md:h-full flex flex-col md:flex-row px-[5vw] md:px-[1vw] gap-[1.5vw]"></div>
+            </section>
+        </main>
+        
+            
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+        <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js"></script>
+        <script src="/data.js"></script>
+        <script src="./work.js"></script>
+</body>
+</html>

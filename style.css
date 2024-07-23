@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @font-face {
+  font-family: 'Gilroy';
+  src: url('./public/fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./public/fonts/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+} */
+
+
+@font-face {
+  font-family: 'mazius';
+  src: url('./public/fonts/Mazius-Extraitalic.ttf');
+}
+
+:root {
+  --primary: #383838;
+  --highlight: #14cf93;
+}
+
+* {
+  font-family: 'Gilroy';
+  font-weight: 500;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.nav-page {  
+  a,
+  a::after {
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+  
+  a {
+    pointer-events: all;
+    position: relative;
+    transition-property: padding;
+  }
+
+  a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    aspect-ratio: 1;
+    height: 0px;
+    background-color: var(--highlight);
+    border-radius: 50%;
+    transition-property: height;
+  }
+
+  a:hover{
+    padding-left: 30px;
+    
+    &::after {
+      height: 20px;
+    }
+  }
+}
+
+.itsme {
+    transition: all 0.1s ease;
+    filter: saturate(0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0, 0 0);
+
+    &:hover {
+      filter: saturate(0.8);
+      clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 16%, 19% 0);
+      border-radius: 10px;
+    }
+}
+
+
+.footer {
+  /* Rectangle 277 */
+
+    /* background: linear-gradient(180deg, #D3FCE8 0%, rgba(106, 135, 121, 0) 100%); */
+
+}
+
+.footer__circle {
+  /* Ellipse 92 */
+    background: linear-gradient(179.97deg, #14CF93 -4.86%, rgba(255, 255, 255, 0) 83.02%);
+
+}
+
+.fancy__links:hover {
+  span:first-child{
+    transform: translateY(-100%);
+  }
+  span:nth-child(2){
+    transform: translateY(0%);
+  }
+}
+
+.fancy__links span:last-child {
+  transform: translateY(100%);
+}
+
+.fancy__links span {
+  transition: transform 0.4s;
+}
+
+@media not all and (min-width: 768px) {
+  :root {
+    --primary: #ffffff;
+  }
+}

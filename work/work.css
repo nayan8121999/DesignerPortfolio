@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+        font-family: 'mazius';
+        src: url('./public/fonts/Mazius-Extraitalic.ttf');
+}
+
+
+
+:root {
+--primary: #383838;
+--highlight: #14cf93;
+}
+
+* {
+font-family: 'Gilroy';
+font-weight: 500;
+user-select: none;
+-webkit-user-drag: none;
+}
+
+
+::-webkit-scrollbar {
+        display: none;
+}
+
+
+/* Open Project(active) */
+.project.active {
+        position: fixed;
+        height: 100vw;
+        width: 100vw;
+        top: 0;
+        left: 0;
+}
